@@ -1,0 +1,10 @@
+{
+    "scripts": {
+        "start": "./mvnw spring-boot:run",
+        "up": "pm2 -f start --name chat-backend-java './mvnw spring-boot:run'",
+        "down": "pm2 stop chat-backend-java --watch && pm2 delete chat-backend-java"
+    },
+    "dependencies": {
+        "pm2": "^5.3.1"
+    }
+}
